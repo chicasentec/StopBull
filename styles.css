@@ -7,6 +7,9 @@ body{
   max-width: 80%;
   margin: 0 auto;
 }
+.container{
+    display: block;
+}
 
 h1{
   text-align: center;
@@ -26,4 +29,22 @@ p{
   color: #fff;
   font-size: 22px;
   font-family: Roboto;
+}
+
+header{
+  text-align: center;
+}
+.imagen{
+  width: 150px;
+}
+.colegio label{
+  display: block;
+}
+select{
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  font-family: roboto;
+  font-size: 18px;
+  color: #999;
 }

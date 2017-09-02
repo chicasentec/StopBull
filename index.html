@@ -10,17 +10,19 @@
 <body>
 <main id="container">
 	<header>
-		<h1>Stopbull</h1>
+<img src="img/stopbull2.svg" class="imagen" alt="">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat consectetur sunt porro quisquam perferendis. Eos accusantium placeat similique nihil illum! Ipsam provident quae, excepturi error, doloremque est nobis sint odit.</p>
 	</header>
+	<div class="container">
+
 	<form method="post" action="http://stop-bullying-dev4good.herokuapp.com/api/report_bullying">
-			<div>
-			<label class= "typo"> Colegio </label>
+			<div class="colegio">
+			<label class= "typo"> Selecciona tu colegio </label>
 			<select name="id_escuela" required>
 				<option selected> --Select-- </option>
 				<option value="1"> Beataimelda </option>
 			</div>
-			<div>
+			<div class="colegio">
 			</select>
 			<label class= "typo"> De qué curso sos? </label>
 			<select name="curso" required>
@@ -38,7 +40,7 @@
 			</select>
 			</div>
 
-			<div>
+			<div class="colegio">
 			<label class= "typo"> A quién le pasó? </label>
 			<input type="radio" name="quien" value="yo">
 			<label class= "typo"> A mí </label>
@@ -46,7 +48,7 @@
 			<label class= "typo"> A otro </label>
 			</div>
 
-			<div>
+			<div class="colegio">
 			<label class= "typo"> Cómo te sentís? </label>
 			<input type="radio" name="feel" value="enojado">
 			<label class= "typo">Enojado</label>
@@ -65,7 +67,7 @@
 			<img src="img/neutral.png">
 			</div>
 
-			<div>
+			<div class="colegio">
 			<label class= "typo"> Qué tipo de bullying? </label>
 			<input type="checkbox" name="verbal" value="verbal">
 			<label class= "typo">Verbal</label>
@@ -77,12 +79,13 @@
 			<label class= "typo">Cyber bullying</label>
 			</div>
 
-			<div>
+			<div class="colegio">
 				<label class= "typo">Contanos que pasó:</label>
 				<textarea name="descripcion" placeholder="Escribi tu comentario"></textarea>
 			</div>
 			<input type="submit" value="Enviar" />
 	</form>
+</div>
 </main>
 </body>
 </html>
