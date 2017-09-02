@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stopbull</title>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<main id="container">
+	<header>
+		<h1>Stopbull</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat consectetur sunt porro quisquam perferendis. Eos accusantium placeat similique nihil illum! Ipsam provident quae, excepturi error, doloremque est nobis sint odit.</p>
+	</header>
+	<form method="post" action="http://stop-bullying-dev4good.herokuapp.com/api/report_bullying">
+			<div>
+			<label> Colegio </label>
+			<select name="id_escuela" required>
+				<option selected> --Select-- </option>
+				<option value="1"> Beataimelda </option>
+			</div>
+			<div>			
+			</select>
+			<label> De qué curso sos? </label>
+			<select name="curso" required>
+				<option selected> --Select-- </option>
+				<option value="1soc"> Primero Sociales </option>
+				<option value="1eco"> Primero Economía </option>
+				<option value="2soc"> Segundo Sociales </option>
+				<option value="2eco"> Segundo Economía </option>
+				<option value="3soc"> Tercero Sociales </option>
+				<option value="3eco"> Tercero Economía </option>
+				<option value="4soc"> Cuarto Sociales </option>
+				<option value="4eco"> Cuarto Economía </option>
+				<option value="5soc"> Quinto Sociales </option>
+				<option value="5eco"> Quinto Economía </option>
+			</select>	
+			</div>
+
+			<div>
+			<label> A quién le pasó? </label>
+			<input type="radio" name="quien" value="yo"> 
+			<label> A mí </label>
+			<input type="radio" name="quien" value="otro">
+			<label> A otro </label>
+			</div>
+
+			<div>			
+			<label> Cómo te sentís? </label>
+			<input type="radio" name="feel" value="enojado"> 
+			<label>Enojado</label>
+			<img src="img/angry.png">
+			<input type="radio" name="feel" value="triste">
+			<label>Triste</label>
+			<img src="img/sad.png">
+			<input type="radio" name="feel" value="confundido">
+			<label>Confundido</label>
+			<img src="img/confused.png">
+			<input type="radio" name="feel" value="asustado">
+			<label>Asustado</label>
+			<img src="img/shock.png">
+			<input type="radio" name="feel" value="neutral">
+			<label>Neutral</label>
+			<img src="img/neutral.png">
+			</div>
+
+			<div>
+			<label> Qué tipo de bullying? </label>
+			<input type="checkbox" name="verbal" value="verbal">
+			<label>Verbal</label>
+			<input type="checkbox" name="fisico" value="fisico">
+			<label>Físico</label>
+			<input type="checkbox" name="psico" value="psico">
+			<label>Psicológico</label>
+			<input type="checkbox" name="cyber" value="cyber">
+			<label>Cyber bullying</label>
+			</div>
+
+			<div>
+				<label>Contanos que pasó:</label>
+				<textarea name="descripcion" placeholder="Escribi tu comentario"></textarea>
+			</div>
+			<input type="submit" value="Enviar" />
+	</form>
+</main>	
+</body>
+</html>
